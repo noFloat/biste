@@ -23,7 +23,7 @@
 </div>
 <div class = "register_sum">
 	<div class = "register_head">
-		<form method="post" action="user/add.php" name="register_user" target="_top" enctype = "multipart/form-data"/>
+		<form method="post" action="user/add.php" name="register_user" target="_top" enctype="multipart/form-data"/>
 			<div class = "register_box">
 				<input name="movie_name" type="text"  placeholder="电影名字" size="11">  
 			</div>

@@ -417,18 +417,7 @@ left:456px;top:-235px;">10</button>
 			<source src="<?php echo $site; ?>" type="video/mp4" />
 			<object data="00.mp4"></object>
 		</video>
-		<?php
-		var a = $.createComment(
-			"测试弹幕",
-			{
-			x: 50, //横坐标50 别忘了逗号！
-			y: 50, //棕坐标50
-			color : 0xFF0000,
-			alpha: 0.8,
-			fontsize :30 //最后一句无需逗号
-			} //括号一定是一左一右匹配的
-			); //别忘了分号！
-			?>
+		
 	</div>
 	<div class="remark">
 		<div class="fi">

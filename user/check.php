@@ -2,7 +2,7 @@
 	session_start();
  	header("Content-type: text/html; charset=utf-8"); 
  	include"final.php";
- 	$_SESSION['user']=NULL; 
+ 	$_SESSION['user']=''; 
  	$user=trim($_POST["user"]);
   	$keyword = md5(md5($_POST["keyword"]));	
  	$code=$_POST['check'];
@@ -27,9 +27,9 @@
 			    echo"<script type='text/javascript'>alert('密码错误');location='../login.php';</script>";   
 			   }  
 			   else {
-			   	$_SESSION['user']= trim($_POST["user"]);
 			    echo"<script type='text/javascript'>alert('登陆成功');location='../index.php';</script>";  
 			 }
 		}
 	}
+	$_SESSION['user']= $user;
 ?>

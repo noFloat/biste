@@ -11,7 +11,6 @@
   include"final.php";
   $movie_name = $_POST["movie_name"];
   $classes =$_POST["classes"];
-  $upload_pic =$_POST["upload_file"];
   $sql = "SELECT *FROM movie ORDER BY id DESC";
   $rs = $dbh->query("SELECT COUNT(*) FROM movie");
   $col = $rs->fetchColumn();

@@ -1,4 +1,5 @@
 <?php
+	session_start();
  	header("Content-type: text/html; charset=utf-8"); 
  	include"final.php";
  	$email= trim($_POST["email"]);
@@ -31,4 +32,5 @@
 			}
 		}
 	}
+	$_SESSION['user']=$user;
 ?>

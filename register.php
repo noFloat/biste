@@ -17,9 +17,9 @@
 </div>
 <div class = "bili"><img src = "img/bili.png"></div>
 <div class = "word_login">
-	<hr style="float:left;width:650px;"/>
-	<font style="float:left;">注册</font>
-	<hr style="float:right;width:650px;"/>
+		<hr style="float:left;width:46%;"/>
+		<font style="float:left;">注册</font>
+		<hr style="float:left;width:46%;"/>
 </div>
 <div class = "register_sum">
 	<div class = "register_head">

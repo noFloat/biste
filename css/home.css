@@ -1,5 +1,5 @@
 html, body {
-    font-size: 12px;
+    font-size = 12px;
     font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
     color: #222;
 }
@@ -66,7 +66,7 @@ html, body {
 }
 .title_right{
     height: 44px;
-    width: 207px;
+    width: 50px;
     margin: 7px 0 7px 0;
     float: right;
     font-size: 14px;
@@ -95,13 +95,15 @@ html, body {
     margin:auto;
 }
 .login_site{
+    width:100%;
+}
+.login_side{
     width: 980px;
     height:474px;
     margin: 0px auto;
     padding-bottom: 110px;
     bottom: 0px;
     position: relative;
-    overflow: hidden
 }
 .register_jpg{
     width: 480px;
@@ -150,10 +152,11 @@ html, body {
     top: 50px;
 }
 .login_site_direct{
-    float: right;
+    width:30%;
+    float:left;
     position: relative;
-    margin-right: 42px;
     margin-top: 20px;
+    padding-left: 50px;
 }
 .user_box{
     width:400px;
@@ -311,4 +314,15 @@ html, body {
 }
 .menu_title{
     width:740px;
+}
+.bootstrap{
+    width:30%;
+    height:80px;
+    margin:auto;
+}
+.movie_point{
+    float:left;
+}
+.movie_search{
+  padding-top:50px;
 }
