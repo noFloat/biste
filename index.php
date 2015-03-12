@@ -10,6 +10,7 @@
 	<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
     <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
     <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/top.js"></script>
 </head>
 <script>
 $(document).ready(function(){
@@ -19,7 +20,11 @@ $(document).ready(function(){
 });
 </script>
 <body>
-<div class="log_hidden">
+		<div id="tbox">
+	    <a id="gotop" href="javascript:void(0)"></a>
+<!-- 	 <a id="pinglun" href="" target="_blank" title="通过QQ联系我们"  rel="nofollow"></a>
+	    <a id="xiangguan"  href="http://www.txcstx.cn/guestbook.html"  target="_blank" title="如果您有任何意见，欢迎反馈给我们！" ></a>
+ --></div>
 <form>
 </form>
 </div>
@@ -84,7 +89,7 @@ $(document).ready(function(){
 	<?php
 		foreach ($allWebsite as $key => $value) { ?>
 	      <div class="item">
-	         <img src="<?php echo $value['pic_site']; ?>" alt="">
+	       	<img src="<?php echo $value['pic_site']; ?>" alt="">【
 	         <div class="carousel-caption"><?php echo $value["title"]; ?></div>
 	      </div>
 	<?php } ?>

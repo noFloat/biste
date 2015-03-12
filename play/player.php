@@ -1,10 +1,18 @@
-﻿<html>
+﻿<?php session_start(); ?>
+<!DOCTYPE html>
+<html>
 <head>
+	<meta charset="UTF-8">
+	<title>哔哩哔哩弹幕视频网 - ( ゜- ゜)つロ  乾杯~  - bilibili</title>
 	<link href="player.css" type="text/css" rel="Stylesheet" >
- 
     <script type="text/javascript"src="player.js" > </script>
+    <script language="javascript" type="text/javascript" src="../js/top.js"></script>
+	<script type="text/javascript" language="javascript" type="text/javascript" src="../js/boom.js"></script>
 </head>
 <body>
+	<div id="tbox">
+	<a id="gotop" href="#"></a>
+</div>
 <?php
 	$site = $_POST['site'];
 ?>
@@ -13,7 +21,7 @@
 		<div class="zhu">
 			<img src="0001.png" style="margin-top:12px;float:left">
 			<div class="aa">
-				<a href="test.html">主站</a>
+				<a href="../index.php">主站</a>
 			</div>
 		</div>
 		<div class="hua">
@@ -28,29 +36,39 @@
 		<div class="shou">
 			<a href="###">手机端</a>
 		</div>
-		<div class="bd">
-		   <div class="deng">
-		   	  <div class="QQ">
-		   	  	<a href="###">
-		   	  		<img src="0002.png" style="margin-top:5px">
-		   	  	</a>
-		   	  </div>
-		   	  <div class="wb">
-		   	  	<a href="###">
-		   	  		<img src="0003.png" style="margin-top:3px">
-		   	  	</a>
-		   	  </div>    
-		   	  <div class="dl">
-		   	  	<a href="c.html">
-		   	  		<img src="0004.png" style="margin-top:5px">
-		   	  	</a>
-		   	  </div>    
+		<?php 
+			if(isset($_SESSION['user'])){ ?>
+				<div class="bd">
+				   <div class="fg">
+				    	<a href=""><?php echo $_SESSION['user']; ?></a>
+				   </div>
+				</div>
+			<?php
+			}else{?>	
+				<div class="bd">
+				   <div class="deng">
+				   	  <div class="QQ">
+				   	  	<a href="###">
+				   	  		<img src="0002.png" style="margin-top:5px">
+				   	  	</a>
+				   	  </div>
+				   	  <div class="wb">
+				   	  	<a href="###">
+				   	  		<img src="0003.png" style="margin-top:3px">
+				   	  	</a>
+				   	  </div>    
+				   	  <div class="dl">
+				   	  	<a href="../login.php">
+				   	  		<img src="0004.png" style="margin-top:5px">
+				   	  	</a>
+				   	  </div>    
 
-           </div>
-		   <div class="ce">
-		    	<a href="z.html">注册</a>
-		   </div>
-		</div>
+		           </div>
+				   <div class="ce">
+				    	<a href="../register.php">注册</a>
+				   </div>
+				</div>
+			<?php } ?>
     </div>
     <div id="second"></div>
 	<div id="third">
@@ -59,7 +77,7 @@
 		</div>
 		<ul class="dh">
 		   <li class="ye">
-		   	  <a href="test.html">首页</a>	   	  
+		   	  <a href="../index.php">首页</a>	   	  
 		   </li>
 		   <li class="dong">
 		   	  <a href="###">动画</a>
@@ -350,8 +368,8 @@ left:456px;top:-235px;">10</button>
 		   	  </a>
 		   </div>
 		   <div class="so">
-		   	  <form action="../user/search.php">
-		   	      <input type="text" name="user" >
+		   	  <form method="post" action="../search.php" name="search_user">
+		   	      <input type="text" name="search_box" >
                   <input type="submit" value="GO!" >
               </form>       
 		   </div>
@@ -403,22 +421,13 @@ left:456px;top:-235px;">10</button>
 	   	 </div>
 	   </div>
 	</div>
-	<div class="box">
-	   <div id="b1">
-	   	 <b><</b>
-	   </div>
-	   <div id="b2">下载手机客户端</div>
-	   <div id="b3">
-	   	 <b>></b>
-	   </div>
-	</div>
-	<div class="player">
-		<video poster="0033.png" controls="controls" width="683px">
+
+	 <div  class="player" id="demo">
+    	   <video poster="0033.png" controls="controls" width="683px"id="Img1">
 			<source src="<?php echo $site; ?>" type="video/mp4" />
 			<object data="00.mp4"></object>
 		</video>
-		
-	</div>
+    </div>
 	<div class="remark">
 		<div class="fi">
 		    <div class="bf">

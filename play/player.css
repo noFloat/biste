@@ -1,4 +1,4 @@
-﻿html,body{
+html,body{
 	   font-size: 15px;
 		font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
 		color:#222;
@@ -113,6 +113,13 @@ a{
     position: relative;
     left:154px;
     top:15px;
+}
+.fg{
+	height:44px;
+    width:38px;
+    position: relative;
+    left:180px;
+    top:60px;
 }
 #second{
 	width:1349px;
@@ -861,4 +868,45 @@ video,object{
 }
 #click{
 	color: rgb(170,170,170);
+}
+*{padding:0px; margin:0px;}
+*html{background-image:url(about:blank);background-attachment:fixed;}
+#tbox{position:fixed;left:50%;bottom:50px;margin-left:500px;width:50px;height:150px
+_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));_margin-bottom:15px;right: 90px;}
+#pinglun,#xiangguan,#gotop{width:50px;height:50px;display:block;background-image: url(../img/top.png);background-repeat: no-repeat;margin-bottom: 5px;}
+#pinglun:hover,#xiangguan:hover,#gotop:hover{width:50px;height:50px;display:block;background-image: url(img/top1.png);background-repeat: no-repeat;}
+#pinglun{background-position:0 0;}
+#xiangguan{background-position:0 -55px;}
+#gotop{background-position:0 -110px;}
+.box
+{   width:65%;
+display: ;
+vertical-align: middle; 
+text-align: center; 
+margin: 0 auto;
+padding: 0;
+display: block;
+*display: block; 
+*font-size: 100px;
+*font-family:Arial;
+position: relative;
+color:blue;
+}
+.box video
+{
+width:100%   
+}
+.MsgTip
+{
+margin: 5px;
+padding: 5px 25px 5px 5px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-webkit-box-shadow: 2px 2px 20px #888;
+-moz-box-shadow: 2px 2px 20px #888;
+z-index: 2;
+position: absolute;
+overflow: hidden;
+white-space: nowrap;
 }
